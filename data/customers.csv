@@ -1,0 +1,11 @@
+customer_id,name,payment_terms_days,city
+C01,Cafe Aurora LLC,30,Yerevan
+C02,Lusin Bakery,14,Yerevan
+C03,Gyumri Bean House,30,Gyumri
+C04,Kond Street Coffee,30,Yerevan
+C05,Hotel Ardi,45,Tsaghkadzor
+C06,Paper Cup Cafe,14,Yerevan
+C07,Dilijan Forest Lodge,45,Dilijan
+C08,Nork Coworking,30,Yerevan
+C09,Cascade Corner,30,Yerevan
+C10,Sevan Shore Cafe,30,Sevan

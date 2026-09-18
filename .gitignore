@@ -7,4 +7,4 @@
 __pycache__/
 
 # input data (never commit)
-data/*.csv
+#data/*.csv  // this needs to be uncommited when we are using real data
