@@ -1,0 +1,10 @@
+# secrets
+.env
+
+# local env / IDE
+.venv/
+.idea/
+__pycache__/
+
+# input data (never commit)
+data/*.csv
