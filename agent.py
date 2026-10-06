@@ -47,7 +47,7 @@ tools = [
                 "from_date": {"type": "string", "description": "Start date, YYYY-MM-DD"},
                 "to_date":   {"type": "string", "description": "End date, YYYY-MM-DD"}
             },
-            "required": ["customer"]
+            "required": ["customer", "from_date", "to_date"]
         }
     }
 ]
