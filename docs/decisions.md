@@ -1,0 +1,3 @@
+One thing in that output worth noticing, because it's exactly the sort of detail that makes a good write-up later: the model said "All 5 invoices are currently open." It got that from erp_status, which Lilit told you nobody ever updates — every row in that file says "open," including the ones that are fully paid. Your tool handed over a misleading column and the model repeated it as fact without hesitation.
+
+That's the whole lesson of tool design in one line: the model trusts whatever you give it. Either stop returning that column, or return what's actually true.

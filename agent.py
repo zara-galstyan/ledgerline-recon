@@ -82,3 +82,27 @@ followup = client.messages.create(
 
 print(next(b for b in followup.content if b.type == "text").text)
 
+
+# Output
+# invoice_id customer_id  issue_date    due_date  amount_amd erp_status
+# 3    INV-1004         C02  2026-06-04  2026-06-18      120000       open
+# 17   INV-1018         C02  2026-06-28  2026-07-12      210000       open
+# 45   INV-1046         C02  2026-08-04  2026-08-18       85000       open
+# 50   INV-1051         C02  2026-08-09  2026-08-23      480000       open
+# 52   INV-1053         C02  2026-08-11  2026-08-25      210000       open
+# transaction_id       date  amount_amd    payer_name reference
+# 0      TXN-50004 2026-06-16      120000  LUSIN BAKERY  INV-1004
+# 6      TXN-50014 2026-07-05      210000  LUSIN BAKERY  INV-1018
+# get_invoices {'customer': 'Lusin Bakery'}
+# Lusin Bakery has the following invoices:
+#
+# | Invoice ID | Issue Date | Due Date | Amount (AMD) | Status |
+# |------------|------------|----------|--------------|--------|
+# | INV-1004 | 2026-06-04 | 2026-06-18 | 120,000 | Open |
+# | INV-1018 | 2026-06-28 | 2026-07-12 | 210,000 | Open |
+# | INV-1046 | 2026-08-04 | 2026-08-18 | 85,000 | Open |
+# | INV-1051 | 2026-08-09 | 2026-08-23 | 480,000 | Open |
+# | INV-1053 | 2026-08-11 | 2026-08-25 | 210,000 | Open |
+#
+# All 5 invoices are currently open with a total amount of **1,105,000 AMD**.
+
